@@ -21,9 +21,9 @@ def palindromeMessage():
 
           # a. Find all palindromes
           palindromes = []
-          messages = data['message'].lower().split(" ")
+          messages = data['message'].split(" ")
           for message in messages:
-                    if len(message) > 2 and message == message[::-1]:
+                    if len(message) > 2 and message.lower() == message.lower()[::-1]:
                               palindromes.append(message)
           
           queryData = data['query'].replace(' ', '')
