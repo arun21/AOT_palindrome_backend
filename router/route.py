@@ -1,8 +1,6 @@
 from router import app
-from flask import Flask, request, jsonify
-from flask_cors import CORS, cross_origin
-from datetime import datetime
-import re
+from flask import request, jsonify
+from flask_cors import cross_origin
 
 
 # DEFAULT
